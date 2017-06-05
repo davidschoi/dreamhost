@@ -1,0 +1,238 @@
+/*
+ * FONTS
+ */
+@font-face {
+    font-family: 'ProximaNova-Light';
+    src: url('./fonts/ProximaNova-Light.eot');
+    src: url('./fonts/ProximaNova-Light.woff2') format('woff2'),
+         url('./fonts/ProximaNova-Light.woff') format('woff'),
+         url('./fonts/ProximaNova-Light.ttf') format('truetype'),
+         url('./fonts/ProximaNova-Light.svg#ProximaNova-Light') format('svg'),
+         url('./fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url('./fonts/Ubuntu-Bold.eot');
+    src: url('./fonts/Ubuntu-Bold.woff2') format('woff2'),
+         url('./fonts/Ubuntu-Bold.woff') format('woff'),
+         url('./fonts/Ubuntu-Bold.ttf') format('truetype'),
+         url('./fonts/Ubuntu-Bold.svg#Ubuntu-Bold') format('svg'),
+         url('./fonts/Ubuntu-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+ * GLOBAL
+ */
+body {
+    font-family: 'ProximaNova-Light';
+}
+
+.main-content {
+    background: url('./images/hero.png') no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 1024px;
+}
+
+/*
+ * HEADER
+ */
+header {
+    background-color: rgba(47, 50, 59, 0.8);
+    padding: 1.5em;
+    position: absolute;
+    width: 100%;
+}
+
+.logo {
+    background: url('./images/logo.svg') no-repeat;
+    background-size: 157px 23px;
+    display: inline-block;
+    font-size: 0;
+    height: 23px;
+    width: 157px;
+}
+
+.nav > li {
+    float: left;
+}
+
+header a {
+    color: #D8D8D8;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.flex {
+    align-items: center;
+    display: flex;
+}
+
+.flex .logo,
+.flex .nav {
+    flex: 1 0 0;
+}
+
+header .nav li {
+    margin-right: 25px;
+}
+
+/*
+ * HERO
+ */
+.hero-wrapper {
+    overflow: hidden;
+    padding-bottom: 250px;
+}
+
+.hero {
+    float: right;
+    padding-top: 300px;
+    width: 40%;
+    margin-right: 40px;
+}
+
+.hero-header {
+    color: #FFF;
+    font-family: 'Ubuntu-Bold';
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.hero-text {
+    color: #BEBEBE;
+    display: table-cell;
+    font-size: 20px;
+    line-height: 28px;
+    vertical-align: middle;
+}
+
+.text-strong {
+    font-family: 'Ubuntu-Bold';
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #1FB0F2;
+    font-size: 18px;
+    margin-top: 15px;
+    padding: 10px 20px;
+}
+
+/*
+ * PRODUCT
+ */
+.product-wrapper {
+    background: #FFF;
+}
+
+.product-list {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.product:first-child {
+    border-left: 1px solid #eee;
+}
+
+.product {
+    border-right: 1px solid #eee;
+    flex: 1 0 0;
+    max-height: 240px;
+    padding: 30px;
+    text-align: center;
+}
+
+.product h3 {
+    font-size: 20px;
+}
+
+.product p {
+    font-size: 14px;
+}
+
+.product .terminal {
+    position: relative;
+    bottom: 5px;
+    right: -34px;
+}
+
+/*
+ * FOOTER
+ */
+footer {
+    background: #1F3244;
+    padding: 80px 0;
+}
+
+footer h4 {
+    color: #FFF;
+    font-family: 'Ubuntu-Bold';
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+footer a,
+footer p {
+    color: #BEBEBE;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: #1FB0F2;
+    text-decoration: none;
+}
+
+footer .nav-column {
+    margin-right: 75px;
+}
+
+footer .nav-column a {
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.copyright {
+    float: right;
+    text-align: right;
+}
+
+.copyright ul > li {
+    display: inline-block;
+}
+
+.copyright p {
+    margin-bottom: 0;
+}
+
+.social li {
+    background: #BEBEBE;
+    border-radius: 50%;
+    height: 40px;
+    margin-right: 15px;
+    width: 40px;
+}
+
+.social li:last-child {
+    margin-right: 0;
+}
+
+.terms {
+    margin-top: 10px;
+}
+
+.terms li {
+    margin-right: 15px;
+}
+
+.terms li:last-child {
+    margin-right: 0;
+}
